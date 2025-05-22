@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <title>Mi Mini Experiencia AR Web</title>
+</head>
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs="trackingMethod: best; debugUIEnabled: false;">
+        <a-entity gltf-model="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/main/2.0/SimpleSphere/glTF/SimpleSphere.gltf"
+                  scale="0.5 0.5 0.5"
+                  position="0 0 -1"></a-entity>
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
